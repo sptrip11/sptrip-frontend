@@ -1,0 +1,473 @@
+.input-area {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	max-width: 440px;
+	padding: 20px;
+	z-index: 10;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 7px;
+}
+
+.info-btn-area {
+	position: absolute;
+	right: 10px;
+	top: 100px;
+	z-index: 10;
+	width: fit-content;
+	height: 36px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.input-area form {
+	flex: 1;
+}
+
+.input-area .search-input {
+	width: 100%;
+	height: 36px;
+	outline: none;
+	border: 1px solid #2563eb;
+	padding: 0px 10px;
+	border-radius: 3px;
+}
+
+.input-area .home__btn {
+	width: 36px;
+	height: 36px;
+	border: 1px solid #2563eb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	color: #2563eb;
+	background-color: #fafafa;
+}
+
+.input-area .home__btn:hover {
+	background-color: #2563eb;
+	color: white;
+}
+
+.info-area {
+	width: 100%;
+	max-width: 400px;
+	background-color: #fafafa;
+	height: calc(100vh - 76px - 20px);
+	position: absolute;
+	left: 20px;
+	bottom: -70px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	transition: all 0.4s;
+	padding: 15px;
+}
+
+.info-area .info-btn {
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	border: 1px solid #2563eb;
+	background-color: #fafafa;
+	color: #2563eb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0;
+	transform: translateX(50%);
+	cursor: pointer;
+	transition: background-color 0.3s;
+	outline: none;
+}
+
+.info-area .info-btn:hover {
+	color: white;
+	background-color: #2563eb;
+}
+
+.info-area .info-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+	overflow: auto;
+}
+
+.info-area2 {
+	position: absolute;
+	width: 100%;
+	right: 40px;
+	bottom: -70px;
+	max-width: 800px;
+	z-index: 10;
+	height: calc(100vh - 76px - 20px);
+	display: flex;
+}
+
+.info-area2 .info-container3,
+.info-area2 .info-container4 {
+	width: 400px;
+	height: 100%;
+	display: flex;
+	position: relative;
+	right: 0px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	transition: all 0.4s;
+	padding: 15px;
+	background-color: #fafafa;
+	gap: 10px;
+	overflow-y: scroll;
+}
+
+.info-container2 {
+	position: absolute;
+	width: 100%;
+	right: 40px;
+	bottom: -70px;
+	max-width: 400px;
+	padding: 20px;
+	z-index: 10;
+	height: calc(100vh - 76px - 20px);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 4px;
+	box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	transition: all 0.4s;
+	padding: 15px;
+	background-color: #fafafa;
+	gap: 10px;
+	overflow: auto;
+}
+
+.info-btn2 {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	border: 1px solid #2563eb;
+	background-color: #fafafa;
+	color: #2563eb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: -37.5px;
+	top: 47.5%;
+	transform: translateX(50%);
+	cursor: pointer;
+	transition: background-color 0.3s;
+	outline: none;
+	z-index: 11;
+}
+
+.info-area .info-card,
+.wish-card,
+.plan-card {
+	width: 100%;
+	height: 230px;
+	flex-shrink: 0;
+	border-radius: 4px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	position: relative;
+	overflow: hidden;
+	background-color: #e4e4e7;
+	cursor: pointer;
+}
+
+.info-area .info-card:hover img,
+.wish-card:hover img,
+.plan-card:hover img {
+	transform: scale(1.2);
+}
+
+.info-area .info-card img,
+.wish-card img,
+.plan-card img {
+	width: 100%;
+	aspect-ratio: 1;
+	object-fit: cover;
+	border-radius: 4px;
+	transition: all 0.3s;
+}
+
+.info-area .info-card .info-text {
+	max-width: 400px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	background-color: rgba(0, 0, 0, 0);
+	backdrop-filter: blur(5px);
+	border-radius: 5px;
+	color: white;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 10px;
+	overflow: hidden;
+	text-align: right;
+}
+
+.info-area .info-card p,
+.wish-card p,
+.plan-card p {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	text-align: right;
+	direction: rtl;
+	color: white;
+}
+
+.info-text-container {
+	width: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+	border-radius: 5px;
+	color: white;
+	padding: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	z-index: 1;
+	text-align: right;
+}
+
+#map {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.info-planner {
+	position: relative;
+	background-color: white;
+	padding: 20px;
+	align-items: center;
+	width: 80%;
+	border: 1px solid #2563eb;
+	border-radius: 4px;
+	box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	text-align: center;
+}
+
+.info-planner h5,
+.info-planner h6 {
+	color: #2563eb;
+	text-align: center;
+}
+
+.info-planner:hover {
+	background-color: #2563eb;
+}
+
+.info-planner:hover h5,
+.info-planner:hover h6 {
+	color: white;
+}
+
+.planner-plus-btn {
+	width: 36px;
+	height: 36px;
+	border-radius: 100%;
+	border: 1px solid #2563eb;
+	background-color: white;
+	color: #2563eb;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease;
+}
+
+.planner-plus-btn:hover {
+	background-color: #2563eb;
+	color: white;
+	transform: rotate(90deg);
+}
+
+.planner-modal {
+	position: fixed;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2000;
+	display: inline-flex;
+	overflow: hidden;
+	outline: 0;
+	width: 100%;
+	max-width: 500px;
+	height: 50%;
+	max-height: 100%;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 5px;
+	justify-content: center;
+}
+
+.planner-modal-center {
+	padding: 20px;
+	padding-bottom: 120px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.planner-modal-center2 {
+	padding: 20px;
+	padding-bottom: 80px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.planner-modal-center h1 {
+	font-weight: bold;
+	color: black;
+}
+
+.input-group {
+	margin-bottom: 20px;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input-group2 {
+	margin-bottom: 100px;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+}
+
+.input-group label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group input[type="range"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #525151;
+	border-radius: 5px;
+}
+
+.input-group input[type="range"] {
+	padding: 0;
+	/* range input에서는 padding 제거 */
+}
+
+.planner-add-btn {
+	width: 120px;
+	height: 45px;
+	background-color: white;
+	border-radius: 10px;
+	color: #2563eb;
+	border: 1px solid #2563eb;
+	font-weight: bold;
+	margin-top: 50px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.planner-add-btn:hover {
+	background-color: #2563eb;
+	color: white;
+}
+
+.day-count {
+	color: #2563eb;
+	font-family: cursive;
+	font-weight: bold;
+}
+
+.plan-card {
+	width: 100%;
+}
+
+.plan-plus-btn {
+	color: black;
+	background-color: transparent;
+	cursor: pointer;
+	outline: none;
+	padding: 5px 10px;
+}
+
+.plan-plus-btn:hover {
+	transform: scale(1.2);
+}
+
+.add-planner-modal {
+	position: fixed;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2000;
+	display: inline-flex;
+	overflow-y: scroll;
+	outline: 0;
+	width: 100%;
+	max-width: 500px;
+	height: 50%;
+	max-height: 100%;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	padding: 5px;
+	justify-content: center;
+}
+
+.plangroup {
+	background-color: white;
+	padding: 10px;
+	align-items: center;
+	width: 70%;
+	border: 1px solid #2563eb;
+	border-radius: 4px;
+	box-shadow: 5px 0px 15px 5px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.plangroup:hover {
+	background-color: #2563eb;
+	color: white;
+}
